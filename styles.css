@@ -125,7 +125,7 @@ li {
 .banner{
   position:relative;
   width: 100%;
-  height: calc(100vh - 115.2px);
+  height: calc(100vh - 88px);
   background-color: #cecece;
   background-size: cover;
   background-position: center;
