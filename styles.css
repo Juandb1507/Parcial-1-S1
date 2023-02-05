@@ -378,7 +378,7 @@ a:hover {
   --bar-color1: rgb(223, 134, 10);
   --bar-color2: rgb(10, 120, 223);
   --bar-color3: rgb(137, 216, 11);
-  --fill-size1: -65%;
+  --fill-size1: -45%;
   --fill-size2: -15%;
   --fill-size3: -30%;
 }
@@ -515,4 +515,19 @@ a:hover {
     border-radius: 2em;
     overflow: hidden;
   }
+}
+#btn-form {
+  width: 100px;
+  margin-left: 45px;
+  margin-bottom: 60px;
+  padding: 10px;
+  background: #aa030300;
+  color: rgb(255, 255, 255);
+  border-radius: 20%;
+  border: solid 1px #ffffff;
+}
+#btn-form:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: solid 1px #ffffff;
 }
