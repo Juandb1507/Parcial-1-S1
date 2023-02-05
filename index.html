@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <script src="/Parcial-1-S1/main.js"></script>
+    <script type="module" src="/Parcial-1-S1/main.js"></script>
     <!-- NAVBAR
              -->
     <nav class="navbar">
@@ -25,7 +25,7 @@
       <div class="menu">
         <li><a href="#Experience">Experience</a></li>
         <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#Experience">Skills</a></li>
+        <li><a href="#skills-id">Skills</a></li>
         <li><a href="#Experience">Contact Me</a></li>
       </div>
       <!-- ICONO HAMBURGUESA -->
@@ -37,7 +37,7 @@
         <ul class="dropdown">
           <li><a href="#Experience">Experience</a></li>
           <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#Experience">Skills</a></li>
+          <li><a href="#skills-id">Skills</a></li>
           <li><a href="#Experience">Contact Me</a></li>
         </ul>
       </div>
@@ -59,15 +59,17 @@
     <br />
     <!-- EXPERIENCE -->
     <section class="experience">
-      <h1 id="Experience">Experience</h1>
-      <p>
+      <h1 class="subtitulo" id="Experience">Experience</h1>
+      <p class="text">
         ¡Visita y descubre algunos de los proyectos en los que he participado!
       </p>
     </section>
+    <br /><br /><br />
+    <hr class="linea-experience" />
     <div class="experience-proyectos">
       <div>
-        <h3>1.FAN STUDY | SPOTIFY</h3>
-        <p>
+        <h3>1. FAN STUDY | SPOTIFY</h3>
+        <p class="text2">
           Se utilizó JavaScript, HTML y CSS para el desarrollo del sitio web,
           culminándose en diciembre del 2022. Fan Study ayuda a los artistas
           musicales a descubrir estadísticas sobre cómo escuchan los fans en
@@ -84,12 +86,12 @@
     </div>
 
     <br />
-    <hr />
+    <hr class="linea-experience" />
     <br />
     <div class="experience-proyectos">
       <div>
-        <h3>2.SCHWEPPES</h3>
-        <p>
+        <h3>2. SCHWEPPES</h3>
+        <p class="text2">
           Sitio web asombrosamente dinámico realizado para la empresa de bebida
           Tónica Schweppes, se utilizaron una amplia variedad de librerías y
           frameworks, así como el lenguaje de marcado usado para la creación de
@@ -105,12 +107,12 @@
     </div>
 
     <br />
-    <hr />
+    <hr class="linea-experience" />
     <br />
     <div class="experience-proyectos">
       <div>
-        <h3>3.BLUMENKOPF</h3>
-        <p>
+        <h3>3. BLUMENKOPF</h3>
+        <p class="text2">
           Diseño web y desarrollo para la nueva colección “Limited by Spatzek”,
           gracias a las distintas herramientas y tecnologías de desarrollo web
           se logró un diseño aparentemente caótico, sin embargo alberga un gran
@@ -132,15 +134,15 @@
     <br />
     <!-- ABOUT ME -->
     <section class="about-me">
-      <h1 id="aboutMe">ABOUT ME</h1>
-      <p>
+      <h1 class="subtitulo" id="aboutMe">ABOUT ME</h1>
+      <p class="text">
         ¿Quieres conocer un poco más sobre mi? ¡Estás en la sección correcta!
       </p>
     </section>
     <div class="bloque-about-me">
       <div>
         <h3>JUAN DAVID BUGALLO SANTANA</h3>
-        <p>
+        <p class="text2">
           ¡Hola! como puedes ver me gusta el mundo de la programación,
           actualmente estoy estudiando Ingeniería de Sistemas en la Universidad
           Metropolitana (UNIMET), entre algunos de mis objetivos a corto plazo
@@ -157,12 +159,39 @@
         >VISITAR GitHub</a
       >
     </div>
-
     <br />
     <hr />
     <hr />
     <hr />
     <br />
+    <br />
+    <!-- SKILLS-->
+    <section class="skills">
+      <h1 class="subtitulo" id="skills-id">SKILLS</h1>
+      <p class="text">Conocimientos y destrezas en programación</p>
+      <br /><br />
+    </section>
+    <div class="skills-dot">
+      <span id="dot1"></span>
+      <h2 id="skill-1"></h2>
+      <div class="progress-bar"></div>
+    </div>
+    <br /><br />
+    <div class="skills-dot">
+      <span id="dot2"></span>
+      <h2 id="skill-2"></h2>
+      <div class="progress-bar2"></div>
+    </div>
+    <br /><br />
+    <div class="skills-dot">
+      <span id="dot3"></span>
+      <h2 id="skill-3"></h2>
+      <div class="progress-bar3"></div>
+    </div>
+    <br /><br /><br /><br />
+    <hr />
+    <hr />
+    <hr />
     <br />
   </body>
 </html>

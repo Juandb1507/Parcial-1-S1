@@ -190,15 +190,7 @@ a:hover {
 
 /* EXPERIENCE */
 
-.experience h1 {
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 24px;
-  font-size: 64px;
-  text-align: center;
-}
-.experience p {
+.text {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -206,13 +198,16 @@ a:hover {
   font-size: 24px;
   text-align: center;
 }
+.linea-experience {
+  border-color: #000000;
+}
 .experience-proyectos {
   display: flex;
   align-items: center;
   margin: 5px;
   padding: 40px;
 }
-.experience-proyectos p {
+.text2 {
   font-size: 24px;
   margin: 5px;
   padding: 5px;
@@ -246,14 +241,6 @@ a:hover {
   color: black;
 }
 @media (max-width: 640px) {
-  .experience h1 {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 24px;
-    font-size: 38px;
-    text-align: center;
-  }
   .experience-proyectos p {
     font-size: 16px;
     margin: 5px;
@@ -289,7 +276,7 @@ a:hover {
 }
 /* ABOUT ME */
 
-.about-me h1 {
+.subtitulo {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -345,12 +332,12 @@ a:hover {
   color: black;
 }
 @media (max-width: 640px) {
-  .about-me h1 {
+  .subtitulo {
     color: #fff;
     margin: 0;
     padding: 0;
     padding-bottom: 24px;
-    font-size: 38px;
+    font-size: 34px;
     text-align: center;
   }
   .bloque-about-me p {
@@ -384,5 +371,148 @@ a:hover {
     border-radius: 80%;
     transition: all 0.2s ease-in-out;
     position: static;
+  }
+}
+/* SKILLS */
+:root {
+  --bar-color1: rgb(223, 134, 10);
+  --bar-color2: rgb(10, 120, 223);
+  --bar-color3: rgb(137, 216, 11);
+  --fill-size1: -65%;
+  --fill-size2: -15%;
+  --fill-size3: -30%;
+}
+.progress-bar {
+  margin-left: 20px;
+  position: relative;
+  width: 400px;
+  height: 40px;
+  background-color: #020521;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bar-color1);
+  transform: translateX(-100%);
+  animation: fill-bar1 8s 1s ease-in-out forwards;
+}
+.progress-bar2 {
+  margin-left: 20px;
+  position: relative;
+  width: 400px;
+  height: 40px;
+  background-color: #020521;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.progress-bar2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bar-color2);
+  transform: translateX(-100%);
+  animation: fill-bar2 8s 1s ease-in-out forwards;
+}
+.progress-bar3 {
+  margin-left: 20px;
+  position: relative;
+  width: 400px;
+  height: 40px;
+  background-color: #020521;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.progress-bar3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bar-color3);
+  transform: translateX(-100%);
+  animation: fill-bar3 8s 1s ease-in-out forwards;
+}
+@keyframes fill-bar1 {
+  to {
+    transform: translateX(var(--fill-size1));
+  }
+}
+@keyframes fill-bar2 {
+  to {
+    transform: translateX(var(--fill-size2));
+  }
+}
+@keyframes fill-bar3 {
+  to {
+    transform: translateX(var(--fill-size3));
+  }
+}
+#dot1 {
+  margin-left: 500px;
+  margin-right: 15px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(223, 134, 10);
+  border-radius: 50%;
+  display: inline-block;
+}
+#dot2 {
+  margin-left: 500px;
+  margin-right: 15px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(10, 120, 223);
+  border-radius: 50%;
+  display: inline-block;
+}
+#dot3 {
+  margin-left: 500px;
+  margin-right: 15px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(137, 216, 11);
+  border-radius: 50%;
+  display: inline-block;
+}
+.skills-dot {
+  display: flex;
+}
+@media (max-width: 640px) {
+  #dot1 {
+    margin-left: 80px;
+  }
+  #dot2 {
+    margin-left: 80px;
+  }
+  #dot3 {
+    margin-left: 80px;
+  }
+  .progress-bar {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: #020521;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+  .progress-bar2 {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: #020521;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+  .progress-bar3 {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    background-color: #020521;
+    border-radius: 2em;
+    overflow: hidden;
   }
 }
