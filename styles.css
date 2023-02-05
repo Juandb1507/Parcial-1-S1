@@ -5,16 +5,22 @@
   padding: 0;
 
   box-sizing: border-box;
+
 }
 
 body {
+  background-color: rgb(15, 26, 37);
   font-family: Oswald;
+  color:#fff;
 }
 
 li {
   list-style: none;
 }
-
+a:visited, a:focus {
+  text-decoration: none;
+  color: #000;
+}
 /* NAVBAR*/
 
 .navbar {
@@ -52,11 +58,12 @@ li {
 }
 
 .menu li:hover {
-  background-color: #919494;
+  background-color: #fff;
 
   border-radius: 60px;
 
   transition: 0.5s ease;
+  color: black;
 }
 
 .menu li {
@@ -111,9 +118,10 @@ li {
 }
 
 .dropdown li:hover {
-  background-color: #000c2ab5;
+  background-color: #fff;
   border-radius: 60px;
   transition: 0.5s ease;
+  color: black;
 }
 
 .hamburger:hover .dropdown {
@@ -183,3 +191,115 @@ li {
     background-image: url('./images/img_3.jpg');
   }
 }
+
+/* EXPERIENCE */
+
+.experience h1{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  font-size: 64px;
+  text-align: center;
+}
+.experience p{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+.experience-proyectos{
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 40px;
+  
+}
+.experience-proyectos p{
+  font-size: 24px;
+  margin: 5px;
+  padding: 5px;
+ 
+}
+.experience-proyectos h3{
+  color: #fff;
+  gap: 1em;
+  font-size: 34px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  
+}
+.experience-proyectos img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit:cover;
+  margin: 20px;
+}
+.experience-proyectos a{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10%;
+  transition: all .2s ease-in-out;
+  
+}
+.experience-proyectos a:hover{
+  background-color: white;
+  color: black;
+}
+@media (max-width: 768px) {
+  .experience h1{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    font-size: 38px;
+    text-align: center;
+  }
+  .experience-proyectos p{
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+   
+  }
+  .experience-proyectos img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+  }
+  .experience-proyectos p{
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+   
+  }
+  .experience-proyectos h3{
+    color: #fff;
+    gap: 1em;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    
+  }
+  .experience-proyectos a{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    transition: all .2s ease-in-out;
+  }
+
+  }
+
